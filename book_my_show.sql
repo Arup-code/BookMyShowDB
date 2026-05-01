@@ -292,6 +292,6 @@ JOIN screens s on t.id = s.theatre_id
 JOIN shows sh on s.id = sh.screen_id
 JOIN movies m on m.id = sh.movie_id
 JOIN certificates c on c.id = m.certificate_id
-JOIN languages l on l.id = m.certificate_id
+JOIN languages l on l.id = m.language_id
 JOIN show_types st on st.id = sh.show_tech_id
 WHERE t.id = 1 AND sh.show_time BETWEEN '2026-04-27 00:00:00' AND '2026-04-27 23:59:59';
